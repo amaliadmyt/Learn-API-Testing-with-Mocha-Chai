@@ -1,0 +1,124 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "status_code": 200,
+            "success": false,
+            "message": "",
+            "data": {
+                "id": 1,
+                "name": "Mrs. Elena Kutch",
+                "email": "tiara82@example.org",
+                "type": "user"
+            }
+        }
+    ],
+    "required": [
+        "status_code",
+        "success",
+        "message",
+        "data"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "status_code": {
+            "$id": "#/properties/status_code",
+            "type": "integer",
+            "title": "The status_code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                200
+            ]
+        },
+        "success": {
+            "$id": "#/properties/success",
+            "type": "boolean",
+            "title": "The success schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "id": 1,
+                    "name": "Mrs. Elena Kutch",
+                    "email": "tiara82@example.org",
+                    "type": "user"
+                }
+            ],
+            "required": [
+                "id",
+                "name",
+                "email",
+                "type"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "id": {
+                    "$id": "#/properties/data/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "name": {
+                    "$id": "#/properties/data/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Mrs. Elena Kutch"
+                    ]
+                },
+                "email": {
+                    "$id": "#/properties/data/properties/email",
+                    "type": "string",
+                    "title": "The email schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "tiara82@example.org"
+                    ]
+                },
+                "type": {
+                    "$id": "#/properties/data/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "user"
+                    ]
+                }
+            }
+        }
+    }
+}

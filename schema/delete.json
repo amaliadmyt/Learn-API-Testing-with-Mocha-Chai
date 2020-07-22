@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "status_code": 200,
+            "success": false,
+            "message": "Success Delete Store",
+            "data": []
+        }
+    ],
+    "required": [
+        "status_code",
+        "success",
+        "message",
+        "data"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "status_code": {
+            "$id": "#/properties/status_code",
+            "type": "integer",
+            "title": "The status_code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                200
+            ]
+        },
+        "success": {
+            "$id": "#/properties/success",
+            "type": "boolean",
+            "title": "The success schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Success Delete Store"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "array",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                []
+            ],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [{}],
+                "$id": "#/properties/data/items"
+            }
+        }
+    }
+}

@@ -1,0 +1,501 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "status_code": 200,
+            "success": false,
+            "message": "Success Get User Stores",
+            "data": {
+                "current_page": 1,
+                "first_page_url": "https://qaplay.dot.co.id/api/v1/users/6/stores?page=1",
+                "from": 1,
+                "last_page": 2,
+                "last_page_url": "https://qaplay.dot.co.id/api/v1/users/6/stores?page=2",
+                "next_page_url": "https://qaplay.dot.co.id/api/v1/users/6/stores?page=2",
+                "path": "https://qaplay.dot.co.id/api/v1/users/6/stores",
+                "per_page": 10,
+                "prev_page_url": null,
+                "to": 10,
+                "total": 14,
+                "items": [
+                    {
+                        "id": 20,
+                        "name": "Serena Store",
+                        "address": "Panglima Sudirman 17",
+                        "description": "Uji Coba Create Store",
+                        "status": "active",
+                        "created_at": "2020-07-19"
+                    },
+                    {
+                        "id": 21,
+                        "name": "Serena Store",
+                        "address": "Panglima Sudirman 17",
+                        "description": "Uji Coba Create Store",
+                        "status": "active",
+                        "created_at": "2020-07-19"
+                    },
+                    {
+                        "id": 22,
+                        "name": "Serena Store",
+                        "address": "Panglima Sudirman 17",
+                        "description": "Uji Coba Create Store",
+                        "status": "active",
+                        "created_at": "2020-07-19"
+                    },
+                    {
+                        "id": 24,
+                        "name": "Serena Store",
+                        "address": "Panglima Sudirman 17",
+                        "description": "Uji Coba Create Store",
+                        "status": "active",
+                        "created_at": "2020-07-19"
+                    },
+                    {
+                        "id": 25,
+                        "name": "Serena Store",
+                        "address": "Panglima Sudirman 17",
+                        "description": "Uji Coba Create Store",
+                        "status": "active",
+                        "created_at": "2020-07-19"
+                    },
+                    {
+                        "id": 26,
+                        "name": "Serena Store",
+                        "address": "Panglima Sudirman 17",
+                        "description": "Uji Coba Create Store",
+                        "status": "active",
+                        "created_at": "2020-07-19"
+                    },
+                    {
+                        "id": 27,
+                        "name": "Serena Store",
+                        "address": "Panglima Sudirman 17",
+                        "description": "Uji Coba Create Store",
+                        "status": "active",
+                        "created_at": "2020-07-19"
+                    },
+                    {
+                        "id": 28,
+                        "name": "Serena Store",
+                        "address": "Panglima Sudirman 17",
+                        "description": "Uji Coba Create Store",
+                        "status": "active",
+                        "created_at": "2020-07-19"
+                    },
+                    {
+                        "id": 29,
+                        "name": "Serena Store",
+                        "address": "Panglima Sudirman 17",
+                        "description": "Uji Coba Create Store",
+                        "status": "active",
+                        "created_at": "2020-07-19"
+                    },
+                    {
+                        "id": 30,
+                        "name": "Serena Store",
+                        "address": "Panglima Sudirman 17",
+                        "description": "Uji Coba Create Store",
+                        "status": "active",
+                        "created_at": "2020-07-19"
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "status_code",
+        "success",
+        "message",
+        "data"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "status_code": {
+            "$id": "#/properties/status_code",
+            "type": "integer",
+            "title": "The status_code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                200
+            ]
+        },
+        "success": {
+            "$id": "#/properties/success",
+            "type": "boolean",
+            "title": "The success schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Success Get User Stores"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "current_page": 1,
+                    "first_page_url": "https://qaplay.dot.co.id/api/v1/users/6/stores?page=1",
+                    "from": 1,
+                    "last_page": 2,
+                    "last_page_url": "https://qaplay.dot.co.id/api/v1/users/6/stores?page=2",
+                    "next_page_url": "https://qaplay.dot.co.id/api/v1/users/6/stores?page=2",
+                    "path": "https://qaplay.dot.co.id/api/v1/users/6/stores",
+                    "per_page": 10,
+                    "prev_page_url": null,
+                    "to": 10,
+                    "total": 14,
+                    "items": [
+                        {
+                            "id": 20,
+                            "name": "Serena Store",
+                            "address": "Panglima Sudirman 17",
+                            "description": "Uji Coba Create Store",
+                            "status": "active",
+                            "created_at": "2020-07-19"
+                        },
+                        {
+                            "id": 21,
+                            "name": "Serena Store",
+                            "address": "Panglima Sudirman 17",
+                            "description": "Uji Coba Create Store",
+                            "status": "active",
+                            "created_at": "2020-07-19"
+                        },
+                        {
+                            "id": 22,
+                            "name": "Serena Store",
+                            "address": "Panglima Sudirman 17",
+                            "description": "Uji Coba Create Store",
+                            "status": "active",
+                            "created_at": "2020-07-19"
+                        },
+                        {
+                            "id": 24,
+                            "name": "Serena Store",
+                            "address": "Panglima Sudirman 17",
+                            "description": "Uji Coba Create Store",
+                            "status": "active",
+                            "created_at": "2020-07-19"
+                        },
+                        {
+                            "id": 25,
+                            "name": "Serena Store",
+                            "address": "Panglima Sudirman 17",
+                            "description": "Uji Coba Create Store",
+                            "status": "active",
+                            "created_at": "2020-07-19"
+                        },
+                        {
+                            "id": 26,
+                            "name": "Serena Store",
+                            "address": "Panglima Sudirman 17",
+                            "description": "Uji Coba Create Store",
+                            "status": "active",
+                            "created_at": "2020-07-19"
+                        },
+                        {
+                            "id": 27,
+                            "name": "Serena Store",
+                            "address": "Panglima Sudirman 17",
+                            "description": "Uji Coba Create Store",
+                            "status": "active",
+                            "created_at": "2020-07-19"
+                        },
+                        {
+                            "id": 28,
+                            "name": "Serena Store",
+                            "address": "Panglima Sudirman 17",
+                            "description": "Uji Coba Create Store",
+                            "status": "active",
+                            "created_at": "2020-07-19"
+                        },
+                        {
+                            "id": 29,
+                            "name": "Serena Store",
+                            "address": "Panglima Sudirman 17",
+                            "description": "Uji Coba Create Store",
+                            "status": "active",
+                            "created_at": "2020-07-19"
+                        },
+                        {
+                            "id": 30,
+                            "name": "Serena Store",
+                            "address": "Panglima Sudirman 17",
+                            "description": "Uji Coba Create Store",
+                            "status": "active",
+                            "created_at": "2020-07-19"
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "current_page",
+                "first_page_url",
+                "from",
+                "last_page",
+                "last_page_url",
+                "next_page_url",
+                "path",
+                "per_page",
+                "prev_page_url",
+                "to",
+                "total",
+                "items"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "current_page": {
+                    "$id": "#/properties/data/properties/current_page",
+                    "type": "integer",
+                    "title": "The current_page schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "first_page_url": {
+                    "$id": "#/properties/data/properties/first_page_url",
+                    "type": "string",
+                    "title": "The first_page_url schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://qaplay.dot.co.id/api/v1/users/6/stores?page=1"
+                    ]
+                },
+                "from": {
+                    "$id": "#/properties/data/properties/from",
+                    "type": "integer",
+                    "title": "The from schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "last_page": {
+                    "$id": "#/properties/data/properties/last_page",
+                    "type": "integer",
+                    "title": "The last_page schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2
+                    ]
+                },
+                "last_page_url": {
+                    "$id": "#/properties/data/properties/last_page_url",
+                    "type": "string",
+                    "title": "The last_page_url schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://qaplay.dot.co.id/api/v1/users/6/stores?page=2"
+                    ]
+                },
+                "next_page_url": {
+                    "$id": "#/properties/data/properties/next_page_url",
+                    "type": "string",
+                    "title": "The next_page_url schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://qaplay.dot.co.id/api/v1/users/6/stores?page=2"
+                    ]
+                },
+                "path": {
+                    "$id": "#/properties/data/properties/path",
+                    "type": "string",
+                    "title": "The path schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://qaplay.dot.co.id/api/v1/users/6/stores"
+                    ]
+                },
+                "per_page": {
+                    "$id": "#/properties/data/properties/per_page",
+                    "type": "integer",
+                    "title": "The per_page schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        10
+                    ]
+                },
+                "prev_page_url": {
+                    "$id": "#/properties/data/properties/prev_page_url",
+                    "type": "null",
+                    "title": "The prev_page_url schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "to": {
+                    "$id": "#/properties/data/properties/to",
+                    "type": "integer",
+                    "title": "The to schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        10
+                    ]
+                },
+                "total": {
+                    "$id": "#/properties/data/properties/total",
+                    "type": "integer",
+                    "title": "The total schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        14
+                    ]
+                },
+                "items": {
+                    "$id": "#/properties/data/properties/items",
+                    "type": "array",
+                    "title": "The items schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "id": 20,
+                                "name": "Serena Store",
+                                "address": "Panglima Sudirman 17",
+                                "description": "Uji Coba Create Store",
+                                "status": "active",
+                                "created_at": "2020-07-19"
+                            },
+                            {
+                                "id": 21,
+                                "name": "Serena Store",
+                                "address": "Panglima Sudirman 17",
+                                "description": "Uji Coba Create Store",
+                                "status": "active",
+                                "created_at": "2020-07-19"
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/data/properties/items/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "id": 20,
+                                        "name": "Serena Store",
+                                        "address": "Panglima Sudirman 17",
+                                        "description": "Uji Coba Create Store",
+                                        "status": "active",
+                                        "created_at": "2020-07-19"
+                                    }
+                                ],
+                                "required": [
+                                    "id",
+                                    "name",
+                                    "address",
+                                    "description",
+                                    "status",
+                                    "created_at"
+                                ],
+                                "additionalProperties": true,
+                                "properties": {
+                                    "id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/id",
+                                        "type": "integer",
+                                        "title": "The id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            20
+                                        ]
+                                    },
+                                    "name": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/name",
+                                        "type": "string",
+                                        "title": "The name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Serena Store"
+                                        ]
+                                    },
+                                    "address": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/address",
+                                        "type": "string",
+                                        "title": "The address schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Panglima Sudirman 17"
+                                        ]
+                                    },
+                                    "description": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/description",
+                                        "type": "string",
+                                        "title": "The description schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Uji Coba Create Store"
+                                        ]
+                                    },
+                                    "status": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/status",
+                                        "type": "string",
+                                        "title": "The status schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "active"
+                                        ]
+                                    },
+                                    "created_at": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/created_at",
+                                        "type": "string",
+                                        "title": "The created_at schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2020-07-19"
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "$id": "#/properties/data/properties/items/items"
+                    }
+                }
+            }
+        }
+    }
+}
